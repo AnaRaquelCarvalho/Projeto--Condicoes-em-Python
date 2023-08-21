@@ -4,7 +4,11 @@ print('='*56)
 import random
 jog = int(input('Em que número pensei? '))
 comput = random.randint(1,5)
-print('      Processando...')
+
+#Tempo para o computador pensar...7
+from time import sleep 
+print('    Processando...')
+sleep(2)
 if jog == comput:
     print('Parabéns! O número é {}'.format(jog,comput))
     print('='*56)
